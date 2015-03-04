@@ -3,6 +3,9 @@
 <head>
 <meta charset='utf-8'/>
 <title><?=$title . $title_append?></title>
+
+<?php //session_start();
+	//$_SESSION['user'] = "";?>	
 <?php if(isset($favicon)): ?><link rel='icon' href='<?=$this->url->asset($favicon)?>'/><?php endif; ?>
 <?php foreach($stylesheets as $stylesheet): ?>
 <link rel='stylesheet' type='text/css' href='<?=$this->url->asset($stylesheet)?>'/>

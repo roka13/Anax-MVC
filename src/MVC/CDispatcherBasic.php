@@ -209,5 +209,6 @@ class CDispatcherBasic implements \Anax\DI\IInjectionAware
 
         $this->isCallableOrException();
         $this->dispatch();
+		  return $this->dispatch();
     }
 }
